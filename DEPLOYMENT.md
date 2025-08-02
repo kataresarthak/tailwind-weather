@@ -141,6 +141,12 @@ const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY || "your-fallback-key";
 - Optimize images and assets
 - Consider using CDN for static assets
 
+#### ES Module Issues (Fixed)
+If you encounter `require is not defined` errors:
+- The project uses ES modules (`"type": "module"` in package.json)
+- `server.js` has been updated to use ES module syntax
+- Alternative: Use `npm run start:cjs` for CommonJS server
+
 ### Debug Commands
 ```bash
 # Check build locally
@@ -148,6 +154,9 @@ npm run build
 
 # Test production server locally
 npm start
+
+# Alternative server (CommonJS)
+npm run start:cjs
 
 # Check for linting issues
 npm run lint
