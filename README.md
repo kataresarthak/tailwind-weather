@@ -112,71 +112,6 @@ The app uses the OpenWeather API. You'll need to:
 const API_KEY = "your-api-key-here";
 ```
 
-## 🎨 Customization
-
-### Colors and Themes
-
-The app uses Tailwind CSS with custom color schemes. You can modify:
-
-- **Primary Colors**: Update the `primary` color palette in `tailwind.config.js`
-- **Weather Colors**: Customize weather condition colors in `src/utils/weatherUtils.js`
-- **Dark Mode**: Adjust dark mode colors in the CSS classes
-
-### Adding New Features
-
-The modular structure makes it easy to add new features:
-
-1. **New Components**: Add to `src/components/`
-2. **Custom Hooks**: Add to `src/hooks/`
-3. **Utilities**: Add to `src/utils/`
-
-## 📱 Responsive Design
-
-The app is fully responsive with breakpoints:
-- **Mobile**: < 640px
-- **Tablet**: 640px - 1024px
-- **Desktop**: > 1024px
-
-## ♿ Accessibility
-
-- **Keyboard Navigation**: Full keyboard support
-- **Screen Reader**: Proper ARIA labels and semantic HTML
-- **Color Contrast**: High contrast ratios for readability
-- **Focus Indicators**: Clear focus states for interactive elements
-
-## 🔄 State Management
-
-The app uses React hooks for state management:
-
-- **useWeatherData**: Manages weather data, loading states, and API calls
-- **useDarkMode**: Handles dark mode toggle and persistence
-
-## 🎯 Performance Optimizations
-
-- **Debounced Search**: Prevents excessive API calls
-- **Memoized Components**: Optimized re-renders
-- **Lazy Loading**: Components load only when needed
-- **Efficient API Calls**: Single API call for current weather and forecast
-
-## 🐛 Error Handling
-
-- **Network Errors**: Graceful handling of API failures
-- **Invalid Cities**: User-friendly error messages
-- **Retry Functionality**: Easy retry for failed requests
-- **Fallback States**: Appropriate UI for different error states
-
-## 📈 Future Enhancements
-
-Potential improvements for future versions:
-
-- **Geolocation**: Automatic location detection
-- **Weather Maps**: Interactive weather maps
-- **Notifications**: Weather alerts and notifications
-- **Offline Support**: PWA capabilities
-- **Weather History**: Historical weather data
-- **Multiple Locations**: Save favorite cities
-- **Weather Widgets**: Embeddable weather widgets
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -184,18 +119,3 @@ Potential improvements for future versions:
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- **OpenWeather API**: For providing reliable weather data
-- **Tailwind CSS**: For the amazing utility-first CSS framework
-- **React Team**: For the incredible React library
-- **Vite**: For the fast build tool
-
----
-
-Built with ❤️ using React and Tailwind CSS
